@@ -5,7 +5,7 @@ An Official BlankEngine plugin that lets you make the pixels in the screen crisp
 Version : 1f
 
 
-Copyright (c) 2022 Photon Eye Studios
+Copyright (c) 2023 Photon Eye Studios
 
 Licensed under MIT (https://github.com/blankengine/extras/blob/main/LICENSE.md)
 
