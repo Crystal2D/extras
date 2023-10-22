@@ -7,7 +7,7 @@ Version : 1f
 
 Copyright (c) 2022 Photon Eye Studios
 
-Licensed under MIT (https://github.com/blankengine/extras/blob/main/LICENSE)
+Licensed under MIT (https://github.com/blankengine/extras/blob/main/LICENSE.md)
 
 */
 
