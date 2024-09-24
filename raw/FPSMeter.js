@@ -2,7 +2,7 @@
 
 Plugin that adds a simple FPS meter.
 
-Version : 1f - Raw
+Version : 1.2f - Raw
 
 
 Copyright (c) 2024 Desert Lake
@@ -152,13 +152,15 @@ class FPSMeter
         
         this.#time = 0;
 
+        const limited = Application.targetFrameRate > 0 && Application.vSyncCount === 0;
+
         if (this.#ms)
         {
             const ms = parseInt(
                 Math.max(
-                    (Time.deltaTime || Time.maximumDeltaTime),
-                    1 / Application.targetFrameRate
-                ) * 1000
+                    (Time.deltaTime || Time.maximumDeltaTime) - (limited ? 1 / Application.targetFrameRate : 5e-3),
+                    0
+                ) * 1e3
             );
             
             this.#text.textContent = `ms  ${ms}`;
@@ -166,10 +168,10 @@ class FPSMeter
             return;
         }
         
-        const fps = Math.min(
+        const fps = limited ? Math.min(
             parseInt(1 / (Time.deltaTime || Time.maximumDeltaTime)),
             Application.targetFrameRate
-        );
+        ) : parseInt(1 / (Time.deltaTime || Time.maximumDeltaTime));
         
         this.#text.textContent = `FPS ${fps}`;
     }
