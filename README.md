@@ -1,6 +1,9 @@
 # Crystal Extras
 
-Helpful extra stuff
+Just helpful extra stuff and plugins
+
+**Licensed under**: [MIT](https://github.com/Crystal2D/plugins?tab=MIT-1-ov-file#readme)
+
 
 ## Crispixels
 Lets you make the pixels in the screen crispier.
