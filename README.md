@@ -2,7 +2,7 @@
 
 Just helpful extra stuff and plugins
 
-**Licensed under**: [MIT](https://github.com/Crystal2D/plugins?tab=MIT-1-ov-file#readme)
+**Licensed under**: [MIT](https://github.com/Crystal2D/extras?tab=MIT-1-ov-file#readme)
 
 
 ## Crispixels
